@@ -1,0 +1,42 @@
+---
+import MapIcon from "@/icons/Map.astro";
+---
+
+<section
+  class="animate-fade-in animate-delay-300 mt-32 mx-auto flex flex-col justify-center items-center text-center"
+>
+  <h2 class="uppercase text-secondary text-5xl font-semibold">
+    26 de abril <span aria-hidden class="hidden md:inline mx-1">|</span><br
+      aria-hidden
+      class="block md:hidden"
+    />
+    <span>17:00 HRS</span>
+  </h2>
+  <h3
+    class="uppercase text-xl text-primary font-medium flex flex-col max-w-sm mt-6"
+  >
+    <span>Lugar de evento</span>
+    <a
+      href="https://maps.app.goo.gl/ZLTKaC311YEF2sKy6"
+      rel="noopener"
+      target="_blank"
+      class="text-white hover:text-gray-300 hover:scale-105 transition"
+      ><span class="text-pretty
+      flex justify-center items-center"
+        ><MapIcon class="size-8" />Unidad Academica de Tequila</span
+      >
+    </a>
+  </h3>
+  <a
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    class={`
+    border-primary border-2 uppercase text-lg text-secondary
+    font-medium
+    px-4 py-1 mt-8
+    hover:bg-secondary hover:scale-125 hover:text-primary transition inline-block
+  
+  `}>Proximamente</a
+  >
+</section>

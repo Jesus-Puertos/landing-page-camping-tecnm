@@ -1,0 +1,88 @@
+---
+import CountDownIcon from "@/assets/IlustrationCountDown.astro";
+const TimeStampEnd = 1714168800 * 1000;
+---
+
+<section class="my-32 flex flex-col gap-y-10 justify-center items-center">
+  <CountDownIcon class="size-72 mx-auto" />
+
+  <div
+    class="flex flex-row gap-x-2 text-primary uppercase font-semibold"
+    data-date={TimeStampEnd}
+  >
+    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
+      <span class="text-4xl tabular-nums" data-days>00</span>
+      <span class="text-xs text-center">Dias</span>
+    </div>
+
+    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+
+    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
+      <span class="text-4xl tabular-nums" data-hours>00</span>
+      <span class="text-xs text-center">Horas</span>
+    </div>
+    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+
+    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
+      <span class="text-4xl tabular-nums" data-minutes>00</span>
+      <span class="text-xs text-center">Minutos</span>
+    </div>
+    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+
+    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
+      <span class="text-4xl tabular-nums" data-seconds>00</span>
+      <span class="text-xs text-center">Segundos</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  const SECOND = 1000;
+  const MINUTE = SECOND * 60;
+  const HOUR = MINUTE * 60;
+  const DAY = HOUR * 24;
+
+  function init() {
+    const $countdown = document.querySelector("[data-date]");
+    if (!$countdown) return;
+
+    const $days = $countdown.querySelector("[data-days] ");
+    const $hours = $countdown.querySelector("[data-hours] ");
+    const $minutes = $countdown.querySelector("[data-minutes] ");
+    const $seconds = $countdown.querySelector("[data-seconds] ");
+
+    const timeStamp = $countdown.getAttribute("data-date");
+    if (!timeStamp) return;
+    const date = new Date(+timeStamp).getTime();
+
+    const formatTime = (time: number) => {
+      return Math.floor(time).toString().padStart(2, "0");
+    };
+
+    //Intervalo
+    function updateCountDown() {
+      const now = Date.now();
+      const diff = date - now;
+
+      if ($days instanceof HTMLElement) {
+        $days.innerHTML = formatTime(diff / DAY);
+      }
+
+      if ($hours instanceof HTMLElement) {
+        $hours.innerHTML = formatTime((diff % DAY) / HOUR);
+      }
+
+      if ($minutes instanceof HTMLElement) {
+        $minutes.innerHTML = formatTime((diff % HOUR) / MINUTE);
+      }
+
+      if ($seconds instanceof HTMLElement) {
+        $seconds.innerHTML = formatTime((diff % MINUTE) / SECOND);
+      }
+    }
+
+    setInterval(updateCountDown, SECOND);
+  }
+
+  init();
+</script>
