@@ -1,9 +1,10 @@
 ---
+import CalendarButton from "@/components/CalendarButton.astro";
 import MapIcon from "@/icons/Map.astro";
 ---
 
 <section
-  class="animate-fade-in animate-delay-300 mt-32 mx-auto flex flex-col justify-center items-center text-center"
+  class="animate-fade-in animate-delay-300 mt-4 mx-auto flex flex-col justify-center items-center text-center"
 >
   <h2 class="uppercase text-secondary text-5xl font-semibold">
     26 de abril <span aria-hidden class="hidden md:inline mx-1">|</span><br
@@ -27,16 +28,5 @@ import MapIcon from "@/icons/Map.astro";
       >
     </a>
   </h3>
-  <a
-    href="#"
-    target="_blank"
-    rel="noopener noreferrer"
-    class={`
-    border-primary border-2 uppercase text-lg text-secondary
-    font-medium
-    px-4 py-1 mt-8
-    hover:bg-secondary hover:scale-125 hover:text-primary transition inline-block
-  
-  `}>Próximamente</a
-  >
+  <CalendarButton />
 </section>
