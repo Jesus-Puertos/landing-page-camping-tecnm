@@ -18,13 +18,26 @@ import "@fontsource-variable/jost";
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <div class="bg-[#ddd] dark:bg-[#000b30]">
+      <slot />
+    </div>
   </body>
 </html>
 
 <style is:global>
+  :root {
+    color-scheme: light dark;
+  }
+
   html {
     font-family: "Jost Variable", sans-serif;
-    background: #000b30;
+    background: #ddd;
+    margin: 0;
+    padding: 0;
+  }
+  @media (prefers-color-scheme: dark) {
+    html {
+      background: #000b30;
+    }
   }
 </style>
