@@ -9,7 +9,7 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
 <footer
   class="text-lg mt-20 w-full border-primary border-t-2 flex flex-col md:flex-row justify-center items-center md:justify-between pt-6 pb-20 gap-y-10"
 >
-  <span class="text-white text-center text-pretty">
+  <span class="text-secondaryClaro dark:text-white text-center text-pretty">
     &#169; 2024 Camping TECNM <span aria-hidden class="hidden md:inline">|</span
     ><br aria-hidden class="block md:hidden" /> Pagina realizada por <a
       href="https://jesus-puertosdev.netlify.app/"
@@ -25,9 +25,10 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
         href="https://www.facebook.com/TecNMZongolica"
         target="_blank"
         rel="noopener"
-        class="text-secondary hover:text-primary hover:scale-125 hover:opacity-70 transition inline-block"
+        class="text-secondaryClaro dark:text-secondary hover:text-primaryClaro dark:hover:text-primary hover:scale-125 hover:opacity-70 transition inline-block"
       >
         <FacebookIcon class="size-7" alt="Logo de Facebook" />
+        <span class="hidden">Facebook</span>
       </a>
     </li>
     <li>
@@ -35,9 +36,10 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
         href="https://x.com/SomosITSZ?s=20"
         target="_blank"
         rel="noopener"
-        class="text-secondary hover:text-primary hover:scale-125 hover:opacity-70 transition inline-block"
+        class="text-secondaryClaro dark:text-secondary hover:text-primaryClaro dark:hover:text-primary hover:scale-125 hover:opacity-70 transition inline-block"
       >
         <XIcon class="size-7" alt="Logo de X" />
+        <span class="hidden">Twitter o X</span>
       </a>
     </li>
     <li>
@@ -46,9 +48,10 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
         "
         target="_blank"
         rel="noopener"
-        class="text-secondary hover:text-primary hover:scale-125 hover:opacity-70 transition inline-block"
+        class="text-secondaryClaro dark:text-secondary hover:text-primaryClaro dark:hover:text-primary hover:scale-125 hover:opacity-70 transition inline-block"
       >
         <InstagramIcon class="size-7" alt="Logo de Instagram" />
+        <span class="hidden">Instagram</span>
       </a>
     </li>
     <li>
@@ -56,9 +59,10 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
         href="https://www.youtube.com/@tecnmzongolica7292"
         target="_blank"
         rel="noopener"
-        class="text-secondary hover:text-primary hover:scale-125 hover:opacity-70 transition inline-block"
+        class="text-secondaryClaro dark:text-secondary hover:text-primaryClaro dark:hover:text-primary hover:scale-125 hover:opacity-70 transition inline-block"
       >
-        <YoutubeIcon class="size-7" alt="Logo de Youtube" />
+        <YoutubeIcon class="size-7" title="" />
+        <span class="hidden">Youtube</span>
       </a>
     </li>
     <ThemeToggle />

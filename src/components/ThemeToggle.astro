@@ -12,24 +12,27 @@ const THEMES = ["Light", "Dark", "System"];
     class="appearance-none border-none flex backdrop-blur-md"
   >
     <span class="sr-only">Escojer tema:</span>
-    <SunIcon id="light" class="theme-toggle-icon size-7 transition-all" />
+    <SunIcon
+      id="light"
+      class="theme-toggle-icon size-7 transition-all text-secondaryClaro"
+    />
     <MoonIcon
       id="dark"
-      class="theme-toggle-icon absolute size-7 transition-all"
+      class="theme-toggle-icon absolute size-7 transition-all text-secondary"
     />
     <SystemIcon
       id="system"
-      class="theme-toggle-icon absolute size-7 transition-all"
+      class="theme-toggle-icon absolute size-7 transition-all text-secondary"
     />
   </button>
   <div
     id="themes-menu"
-    class="absolute opacity-0 scale-80 top-4 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/70 dark:bg-gray-900/70 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
+    class="absolute opacity-0 scale-80 top-4 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/60 dark:bg-gray-900/70 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
   >
     <ul>
       {
         THEMES.map((theme) => (
-          <li class="themes-menu-option px-2 py-1 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm">
+          <li class="themes-menu-option px-2 py-1 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded- text-black dark:text-white">
             {theme}
           </li>
         ))
