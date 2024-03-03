@@ -1,0 +1,23 @@
+<button
+  class:list={`
+		border-primaryClaro
+    dark:border-primary 
+    border-2 uppercase 
+    rounded-md
+    text-lg 
+    text-secondaryClaro
+    dark:text-secondary
+    font-medium
+    px-4 py-1 mt-8
+    hover:bg-secondaryClaro
+    dark:hover:bg-secondary 
+    hover:scale-125
+    hover:text-primaryClaro 
+    dark:hover:text-primary 
+    transition 
+    inline-block
+	`}
+  {...Astro.props}
+>
+  <slot />
+</button>

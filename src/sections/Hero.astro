@@ -1,28 +1,36 @@
 ---
-
+import CampingImage from "@/assets/CampingImage.astro";
+import Code from "@/assets/Code.astro";
 ---
 
 <section
-  class="flex flex-col justify-center items-center h-svh bg-cover bg-no-repeat bg-postion"
-  style="background-image: url(./hero.webp);"
+  class="flex flex-col md:flex-row w-full justify-between items-center bg-[url('https://tailframes.com/images/squares-bg.webp')] dark:bg-none bg-cover bg-center bg-no-repeat mb-32"
 >
-  <span
-    class="animate-fade-in animate-delay-300 text-xl uppercase text-secondary bg-primary px-6 py-1 mb-9 mt-2 font-medium rounded"
-    >Camping</span
-  >
-  <h1
-    class="text-white uppercase text-6xl text-center font-normal animate-fade-in-up"
-  >
-    TECNM Campus Zongolica
-  </h1>
-  <div
-    class="absolute bottom-0 w-full h-48 bg-gradient-to-b from-transparent via-[#ddddddaf] to-[#ddd] dark:via-[#000b30] dark:to-[#000b30] pointer-events-none"
-  >
-  </div>
-</section>
+  <CampingImage class="md:w-96 md:h-96 order-2 md:order-1 md:ml-80" />
 
-<style>
-  .bg-postion {
-    background-position: center bottom;
-  }
-</style>
+  <div
+    class="m-auto flex max-w-screen-xl grow flex-col items-center justify-start gap-6 px-3 py-20 md:gap-12 md:px-12 lg:max-w-7xl lg:px-24 order-1 md:order-2"
+  >
+    <div class="flex flex-1 flex-col items-center gap-6 text-center">
+      <span
+        class="inline-flex rounded-[64px] border text-center font-semibold transition-all duration-300 ease-in-out h-7 px-3 py-1 text-sm leading-tight border-primary bg-blue-50 dark:bg-secondary text-primary animate-fade-in animate-delay-300"
+        >CAMPTII V5.0</span
+      >
+      <div class="flex max-w-lg flex-col gap-6">
+        <h3
+          class="text-4xl font-semibold text-secondaryClaro dark:text-secondary md:text-6xl animate-fade-in-up"
+        >
+          TECNM Campus Zongolica
+        </h3>
+        <h4
+          class="text-lg font-normal leading-7 text-secondaryClaro dark:text-secondary animate-fade-in-up"
+        >
+          Ven y disfruta de la naturaleza en el Tecnm Campus Zongolica, con la
+          mejor experiencia de campamento, con actividades de aventura, deporte
+          y convivencia.
+        </h4>
+      </div>
+    </div>
+  </div>
+  <Code class="hidden md:block md:w-96 md:h-96 order-3 md:order-3 md:mr-80" />
+</section>

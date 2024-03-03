@@ -1,27 +1,13 @@
-<button
+---
+import ButtonBasic from "./ButtonBasic.astro";
+---
+
+<ButtonBasic
   id="add-to-calendar"
-  class:list={`
-		border-primaryClaro
-    dark:border-primary 
-    border-2 uppercase 
-    rounded-md
-    text-lg 
-    text-secondaryClaro
-    dark:text-secondary
-    font-medium
-    px-4 py-1 mt-8
-    hover:bg-secondaryClaro
-    dark:hover:bg-secondary 
-    hover:scale-125
-    hover:text-primaryClaro 
-    dark:hover:text-primary 
-    transition 
-    inline-block
-	`}
-  aria-label="agregar al calendario se abrirá ventana flotante"
+  aria="Boton para agregar el evento al calendario, se abrira una ventana flotante."
 >
   Agregar al calendario
-</button>
+</ButtonBasic>
 
 <script is:inline>
   const config = {

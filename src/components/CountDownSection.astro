@@ -1,0 +1,41 @@
+---
+import CountDownIcon from "../assets/IlustrationCountDown.astro";
+---
+
+<section class="my-32 flex flex-col gap-y-10 justify-center items-center">
+  <CountDownIcon class="size-72 mx-auto" />
+  <h3
+    class="mx-auto flex justify-center items-center text-5xl text-secondaryClaro dark:text-secondary text-center text-balanced font-semibold uppercase"
+  >
+    Tiempo restante para el inicio de el evento.
+  </h3>
+
+  <div
+    class="flex flex-row gap-x-2 text-primary uppercase font-semibold"
+    {...Astro.props}
+  >
+    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
+      <span class="text-4xl tabular-nums" data-days>00</span>
+      <span class="text-xs text-center">Días</span>
+    </div>
+
+    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+
+    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
+      <span class="text-4xl tabular-nums" data-hours>00</span>
+      <span class="text-xs text-center">Horas</span>
+    </div>
+    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+
+    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
+      <span class="text-4xl tabular-nums" data-minutes>00</span>
+      <span class="text-xs text-center">Minutos</span>
+    </div>
+    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+
+    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
+      <span class="text-4xl tabular-nums" data-seconds>00</span>
+      <span class="text-xs text-center">Segundos</span>
+    </div>
+  </div>
+</section>
