@@ -1,55 +1,127 @@
-# Astro Starter Kit: Basics
+<a name="readme-top"></a>
 
-```sh
-npm create astro@latest -- --template basics
-```
+<div align="center">
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<a href="https://github.com/Jesus-Puertos/landing-page-camping-tecnm">
+  <img src="./public/logo.png" alt="Logo" width="800" />
+</a>
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Landing Page del CAMPTII V5.0
 
-## 🚀 Project Structure
+CAMPTII V5.0 es un evento de campamento para la ingeniría en sistemas computacionales, a desarrollarse el dia 26 de abril del 2024 en la Unidad Académica de Tequila, Ver. Organizado por el Instituto Tecnologico Superior de Zongolica.\
+[Reportar error](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/issues) · [Sugerir algo](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/issues)
 
-Inside of your Astro project, you'll see the following folders and files:
+</div>
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+<details>
+<summary>Tabla de contenidos</summary>
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. [Características principales](#características-principales)
+2. [Para empezar](#para-empezar)
+   - [Prerequisitos](#prerequisitos)
+   - [Instalación](#instalación)
+3. [Contribuir al proyecto](#contribuir-al-proyecto)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+</details>
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Características principales
 
-## 🧞 Commands
+- **Detalles del evento**: Obtén información detallada sobre la fecha, hora, ubicación del evento.
+- **Agregar evento al calendario**: Permite a los usuarios agregar el evento a sus calendarios.
+- **Redes sociales**: Conoce las redes oficiales donde podrás informarte sobre el evento.
 
-All commands are run from the root of the project, from a terminal:
+### Capturas de pantalla de la web de CAMPTII V5.0:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+![Captura de pantalla en móvil](./public/Mobile_README.png)
+![Captura de pantalla en ordenador](./public/Desktop_README.png)
 
-## 👀 Want to learn more?
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# landing-page-camping-tecnm
+## Para empezar
+
+### Prerequisitos
+
+- NPM
+
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Instalación
+
+1. Clona el repositorio
+
+   ```sh
+   git clone https://github.com/Jesus-Puertos/landing-page-camping-tecnm.git
+   ```
+
+2. Instala los paquetes de NPM
+
+   ```sh
+   npm install
+   ```
+
+3. Ejecuta el proyecto
+
+   ```sh
+   npm run dev
+   ```
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
+## Contribuir al proyecto
+
+Las contribuciones son lo que hacen que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. ¡Cualquier contribución que hagas es **muy apreciada**! para poder llevar a este proyecto a otro nivel.
+
+Si tienes alguna sugerencia que podría mejorar el proyecto, por favor haz un [_fork_](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/fork) del repositorio y crea una [_pull request_](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/pulls). También puedes simplemente abrir un [_issue_](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/issues) con la etiqueta "enhancement".
+
+Aquí tienes una guía rápida:
+
+1. Haz un [_fork_](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/fork) del Proyecto
+2. Clona tu [_fork_](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/fork) (`git clone <URL del fork>`)
+3. Añade el repositorio original como remoto (`git remote add upstream <URL del repositorio original>`)
+4. Crea tu Rama de Funcionalidad (`git checkout -b feature/CaracteristicaIncreible`)
+5. Realiza tus Cambios (`git commit -m 'Add: alguna CaracterísticaIncreible'`)
+6. Haz Push a la Rama (`git push origin feature/CaracteristicaIncreible`)
+7. Abre una [_pull request_](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/pulls)
+
+Por favor, consulta nuestra [guía de contribución](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/blob/master/CONTRIBUTING.md) para saber cómo puedes empezar de la mejor manera y siguiendo [buenas prácticas](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/blob/main/CONTRIBUTING.md#buenas-prácticas-).
+
+#
+
+**¡Gracias a todos los colaboradores!**
+
+[![Contribuidores](https://contrib.rocks/image?repo=Jesus-Puertos/landing-page-camping-tecnm)](https://github.com/Jesus-Puertos/landing-page-camping-tecnm/graphs/contributors)
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
+## 🛠️ Stack
+
+- [![Astro][astro-badge]][astro-url] - The web framework for content-driven websites.
+- [![Typescript][typescript-badge]][typescript-url] - JavaScript with syntax for types.
+- [![Tailwind CSS][tailwind-badge]][tailwind-url] - A utility-first CSS framework for rapidly building custom designs.
+- [![@midudev/tailwind-animations][animations-badge]][animations-url] - Easy peasy animations for your Tailwind project.
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
+[astro-url]: https://astro.build/
+[typescript-url]: https://www.typescriptlang.org/
+[tailwind-url]: https://tailwindcss.com/
+[animations-url]: https://tailwindcss-animations.vercel.app/
+[astro-badge]: https://img.shields.io/badge/Astro-fff?style=for-the-badge&logo=astro&logoColor=bd303a&color=352563
+[typescript-badge]: https://img.shields.io/badge/Typescript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&color=blue
+[tailwind-badge]: https://img.shields.io/badge/Tailwind-ffffff?style=for-the-badge&logo=tailwindcss&logoColor=38bdf8
+[animations-badge]: https://img.shields.io/badge/@midudev/tailwind-animations-ff69b4?style=for-the-badge&logo=node.js&logoColor=white&color=blue
+[contributors-shield]: https://img.shields.io/github/contributors/midudev/la-velada-web-oficial.svg?style=for-the-badge
+[contributors-url]: https://github.com/midudev/la-velada-web-oficial/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/midudev/la-velada-web-oficial.svg?style=for-the-badge
+[forks-url]: https://github.com/midudev/la-velada-web-oficial/network/members
+[stars-shield]: https://img.shields.io/github/stars/midudev/la-velada-web-oficial.svg?style=for-the-badge
+[stars-url]: https://github.com/midudev/la-velada-web-oficial/stargazers
+[issues-shield]: https://img.shields.io/github/issues/midudev/la-velada-web-oficial.svg?style=for-the-badge
+[issues-url]: https://github.com/midudev/la-velada-web-oficial/issues
