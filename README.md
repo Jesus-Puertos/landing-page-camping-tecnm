@@ -8,7 +8,7 @@
 [![Issues][issues-shield]][issues-url]
 
 <a href="https://github.com/Jesus-Puertos/landing-page-camping-tecnm">
-  <img src="./public/logo.png" alt="Logo" width="800" />
+  <img src="./public/Lgcamptii.png" alt="Logo" width="800" />
 </a>
 
 ## Landing Page del CAMPTII V5.0
