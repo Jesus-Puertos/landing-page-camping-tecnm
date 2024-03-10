@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         //modo claro
-        primaryClaro: "#FF6363",
+        primaryClaro: "#51d1f6",
         secondaryClaro: "#4a5568",
 
         //modo oscuro
