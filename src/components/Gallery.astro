@@ -1,0 +1,38 @@
+---
+import 'photoswipe/style.css';   
+---
+
+<h2 class="text-3xl font-bold text-center mt-14 mb-8">
+    Revive los mejores momentos de la edición 2024
+</h2>
+
+<div class=" grid grid-cols-3 max-w-6xl gap-8 mx-auto py-20" id="gallery">
+    {
+        Array.from({ length: 9}).map((_, i) => (
+            <a
+            class="group rounded-xl  transition-all  hover:scale-105 relative"
+             href={`/archivo-page/camptii-v5/gallery/img-${i+1}.jpeg`} 
+             target="_blank">
+                <img
+                class="blur-lg absolute inset-0 transition group-hover:contrast-150 opacity-70  -z-10"
+                loading="lazy"
+                src={`/archivo-page/camptii-v5/gallery/img-${i+1}.jpeg`} alt="gallery image"/>
+                <img
+                class="rounded-xl"
+                loading="lazy"
+                src={`/archivo-page/camptii-v5/gallery/img-${i+1}.jpeg`} alt="gallery image"/>
+            </a>
+        ))
+    }
+</div>
+
+<script type="module">
+import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+ const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a',
+      pswpModule: () => import('photoswipe')
+    });
+    lightbox.init();
+</script>
+
