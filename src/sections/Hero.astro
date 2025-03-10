@@ -1,36 +1,41 @@
 ---
 import CampingImage from "@/assets/CampingImage.astro";
 import Code from "@/assets/Code.astro";
+import Badge from "@/components/Badge.astro";
 ---
 
 <section
-  class="flex flex-col md:flex-row w-full justify-between items-center bg-[url('https://tailframes.com/images/squares-bg.webp')] dark:bg-none bg-cover bg-center bg-no-repeat mb-32"
+  class="flex flex-col md:flex-row w-full justify-between items-center bg-[url('https://tailframes.com/images/squares-bg.webp')] dark:bg-none bg-cover bg-center bg-no-repeat mb-0"
 >
-  <CampingImage class="md:w-96 md:h-96 order-2 md:order-1 md:ml-44" />
 
   <div
     class="m-auto flex max-w-screen-xl grow flex-col items-center justify-start gap-6 px-3 py-20 md:gap-12 md:px-12 lg:max-w-7xl lg:px-24 order-1 md:order-2"
   >
     <div class="flex flex-1 flex-col items-center gap-6 text-center">
-      <span
-        class="inline-flex rounded-[64px] border text-center font-semibold transition-all duration-300 ease-in-out h-7 px-3 py-1 text-sm leading-tight border-primary bg-blue-50 dark:bg-secondary text-primary animate-fade-in animate-delay-300"
-        >CAMPTII V5.0</span
-      >
+      
       <div class="flex max-w-lg flex-col gap-6">
         <h1
-          class="text-4xl font-semibold text-secondaryClaro dark:text-secondary md:text-6xl text-balance animate-fade-in-up"
+          class="text-4xl font-semibold text-secondaryClaro dark:text-secondary md:text-6xl text-left animate-fade-in-up"
         >
-          TECNM Campus Zongolica
+          Campamento para estudiantes de la ingeniería en sistemas computacionales
         </h1>
         <p
-          class="text-xl font-normal leading-7 text-secondaryClaro dark:text-secondary text-pretty animate-fade-in-up"
+          class="text-xl font-normal leading-7 text-secondaryClaro dark:text-secondary text-left animate-fade-in-up"
         >
           Ven y disfruta de la naturaleza en el Tecnm Campus Zongolica, con la
           mejor experiencia de campamento, con actividades de aventura, deporte
           y convivencia.
-        </p>
+        </p>  
       </div>
+      <div class="flex justify-center items-center gap-x-4 gap-y-4 flex-wrap">   
+      <Badge>InnovaTECNM</Badge>
+      <Badge>HackaTECNM</Badge>
+      <Badge>Carrera de botargas</Badge>
+      <Badge>Ponencias</Badge>
+    
+    
+     </div>
     </div>
   </div>
-  <Code class="hidden md:block md:w-96 md:h-96 order-3 md:order-3 md:mr-44" />
+  <Code class="hidden md:block md:w-96 md:h-96 order-3 md:order-3 md:mr-44 animate-fade-in" />
 </section>
