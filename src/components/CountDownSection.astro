@@ -2,40 +2,46 @@
 import CountDownIcon from "../assets/IlustrationCountDown.astro";
 ---
 
-<section class="my-32 flex flex-col gap-y-10 justify-center items-center">
-  <CountDownIcon class="size-72 mx-auto" />
+<section class="my-2 flex flex-col gap-y-2 justify-center items-center ">
+  <!-- <CountDownIcon class="size-72 mx-auto" /> -->
   <h3
-    class="mx-auto flex justify-center items-center text-5xl text-secondaryClaro dark:text-secondary text-center text-balanced font-semibold uppercase"
+    class="animate-fade-in animate-delay-300 pb-4 text-sm font-medium text-primary uppercase"
   >
     Tiempo restante para el inicio de el evento.
   </h3>
-
+  <div class="animate-fade-in-up animate-delay-400 relative mb-4 flex justify-center md:mb-8">
+  <img src="/logo2025.png" class="relative z-10 w-[200px] select-none md:w-[300px] lg:w-[240px]" alt="" draggable="false">
+</div>
   <div
-    class="flex flex-row gap-x-2 text-primary uppercase font-semibold"
+    class="flex flex-wrap justify-center gap-6 animate-fade-in-up"
     {...Astro.props}
   >
-    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
-      <span class="text-4xl tabular-nums" data-days>00</span>
-      <span class="text-xs text-center">Días</span>
+    <div class="flex flex-col items-center justify-center bg-white text-black 
+             rounded-md shadow-lg px-4 py-2 min-w-[70px]">
+      <span class="text-4xl font-bold md:text-5xl" data-days>00</span>
+      <span class="text-xs font-semibold uppercase mt-1">Días</span>
     </div>
 
-    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+    <span aria-hidden="true" class="hidden md:blockmt-1 text-8xl">:</span>
 
-    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
-      <span class="text-4xl tabular-nums" data-hours>00</span>
-      <span class="text-xs text-center">Horas</span>
+    <div class="flex flex-col items-center justify-center bg-white text-black 
+             rounded-md shadow-lg px-4 py-2 min-w-[70px]">
+      <span class="text-4xl font-bold md:text-5xl " data-hours>00</span>
+      <span class="text-xs font-semibold uppercase mt-1">Horas</span>
     </div>
-    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+    <span aria-hidden="true" class="hidden md:blockmt-1 text-8xl">:</span>
 
-    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
-      <span class="text-4xl tabular-nums" data-minutes>00</span>
-      <span class="text-xs text-center">Minutos</span>
+    <div class="flex flex-col items-center justify-center bg-white text-black 
+             rounded-md shadow-lg px-4 py-2 min-w-[70px]">
+      <span class="text-4xl font-bold md:text-5xl" data-minutes>00</span>
+      <span class="text-xs font-semibold uppercase mt-1">Minutos</span>
     </div>
-    <span aria-hidden="true" class="mt-1 text-xl">:</span>
+    <span aria-hidden="true" class="hidden md:blockmt-1 text-8xl">:</span>
 
-    <div class="flex flex-col justify-center items-center gap-y-2 w-16">
-      <span class="text-4xl tabular-nums" data-seconds>00</span>
-      <span class="text-xs text-center">Segundos</span>
+    <div class="flex flex-col items-center justify-center bg-white text-black 
+             rounded-md shadow-lg px-4 py-2 min-w-[70px]">
+      <span class="text-4xl font-bold md:text-5xl" data-seconds>00</span>
+      <span class="text-xs font-semibold uppercase mt-1">Segundos</span>
     </div>
   </div>
 </section>

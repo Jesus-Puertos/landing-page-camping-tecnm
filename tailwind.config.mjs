@@ -7,18 +7,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        //modo claro
         primaryClaro: "#51d1f6",
         secondaryClaro: "#4a5568",
 
-        //modo oscuro
         primary: "#FF6363",
         secondary: "#ddd",
+
+        innovatecnm: "#FF6363",
       },
       fontFamily: {
         body: ["Nunito"],
       },
+      
     },
+    
   },
   plugins: [animations],
 };
